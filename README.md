@@ -3,7 +3,7 @@
 
 这个库不用英文书写。
 ##1.线性表
-###总结
+###解决进度
 No.|	Describition	| mark |
 |  :------ |  :-------    |   :---------   |
 |1 | Remove Duplicates from Sorted Array	|  |
