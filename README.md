@@ -11,7 +11,7 @@ No.|	Describition	| mark |
 * 2	Remove Duplicates from Sorted Array II	
 * 3	Search in Rotated Sorted Array	
 * 4	Search in Rotated Sorted Array II	
-<font color=#FF4500 >5	Median of Two Sorted Arrays	递归实现find kth</font>
+<font color=red >5	Median of Two Sorted Arrays	递归实现find kth</font>
 * 6	Longest Consecutive Sequence	
 * 7	Two Sum	Hash，夹逼均可
 * 8	3Sum	Hash法转换2sum
