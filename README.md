@@ -4,8 +4,10 @@
 这个库不用英文书写。
 ##1.线性表
 ###总结
-No.|	Describition	| mark
-1	| Remove Duplicates from Sorted Array	| |
+No.|	Describition	| mark |
+|    ------: |    :-------:    |    :---------   |
+1	| Remove Duplicates from Sorted Array	|  |
+
 * 2	Remove Duplicates from Sorted Array II	
 * 3	Search in Rotated Sorted Array	
 * 4	Search in Rotated Sorted Array II	
