@@ -64,7 +64,7 @@ No.|	Describition	| mark |
 |No.	|Describition|	mark|
 |  :------ |  :-------    |   :---------   |
 |1|	Valid Parentheses	|入栈前括号，逐个比较如果是后括号则出栈
-|2	Longest Valid Parentheses	|将一对()转成*
+|2|	Longest Valid Parentheses	|将一对()转成*
 |3	|Largest Rectangle in Histogram	|转成升序[1,2,2,3,5,6]
 |4	|Evaluate Reverse Polish Notation	|数字入栈，遇到操作符，出栈后2个，然后结果入栈|
 
