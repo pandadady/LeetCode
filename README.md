@@ -64,7 +64,37 @@ No.|	Describition	| mark |
 |No.	|Describition|	mark|
 |  :------ |  :-------    |   :---------   |
 |1|	Valid Parentheses	|入栈前括号，逐个比较如果是后括号则出栈
-|2|	Longest Valid Parentheses	|将一对()转成*
-|3	|Largest Rectangle in Histogram	|转成升序[1,2,2,3,5,6]
-|4	|Evaluate Reverse Polish Notation	|数字入栈，遇到操作符，出栈后2个，然后结果入栈|
+|2|	Longest Valid Parentheses	|将一对()转成* 
+|3| Largest Rectangle in Histogram	|转成升序[1,2,2,3,5,6]
+|4| Evaluate Reverse Polish Notation	|数字入栈，遇到操作符，出栈后2个，然后结果入栈|
+##4.二叉树
+|No.|	Describition	|mark|
+|  :------ |  :-------    |   :---------   |
+1	|Binary Tree Preorder Traversal|	用栈保存根节点|
+2	|Binary Tree Inorder Traversal|	只保存左节点，然后再扩展右节点。|
+3	|Binary Tree Postorder Traversal	|需要温习|
+4	|Binary Tree Level Order Traversal	|queue<pair<TreeNode*,int>> q;int level，懂？|
+5	|Binary Tree Level Order Traversal II	用栈做倒序。
+6	|Binary Tree Zigzag Level Order Traversal	|需要再看|
+7	|Recover Binary Search Tree	Pass||
+8	|Same Tree	|先序遍历解决|
+9	|Symmetric Tree|	先序遍历，需要注意左右和补位|
+10	|Balanced Binary Tree	|再看|
+11	|Flatten Binary Tree to Linked List	|再看|
+12	|Populating Next Right Pointers in Each Node II	|
+13	|Construct Binary Tree from Preorder and Inorder Traversal	|
+14	|Construct Binary Tree from Inorder and Postorder Traversal	|
+15	|Unique Binary Search Trees|	UniqueTrees[i] = ∑ UniqueTrees[0...k] * [i-1-k]    
+16	|Unique Binary Search Trees II|	|
+17	|Validate Binary Search Tree	|中序遍历，升序|
+18	|Convert Sorted Array to Binary Search Tree|	中间点|
+19	|Convert Sorted List to Binary Search Tree	|转成vector解决|
+20	|Minimum Depth of Binary Tree	|递归，右为0取左，左为0取右，都有取二者最小，没有是0|
+21	|Maximum Depth of Binary Tree	|与上题一样，min幻城max|
+22	|Path Sum	|条件是叶子|
+23	|Path Sum II|	神奇的path那个|
+24	|Binary Tree Maximum Path Sum	|
+25	|Populating Next Right Pointers in Each Node	|
+26	|Sum Root to Leaf Numbers	|
+
 
