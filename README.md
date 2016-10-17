@@ -1,7 +1,6 @@
 # LeetCode
-这个库用于总结leetcode中遇到的习题，期望按照数据结构的不同，进行总结，发现每类数据结构解题的特点。
-
-这个库不用英文书写。
+这个库用于总结leetcode中遇到的习题
+#常用数据结构习题总结
 ##1.线性表
 ###解决进度
 No.|	Describition	| mark |
@@ -96,5 +95,6 @@ No.|	Describition	| mark |
 24	|Binary Tree Maximum Path Sum	|
 25	|Populating Next Right Pointers in Each Node	|
 26	|Sum Root to Leaf Numbers	|
-
+#常用方法习题总结
+##1.排序
 
