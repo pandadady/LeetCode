@@ -45,20 +45,20 @@ No.|	Describition	| mark |
 ##2.字符串
 No.|	Describition|	mark|
 |  :------ |  :-------    |   :---------   |
-1	|Valid Palindrome	前后指针相向遍历比较|
-2	|Implement strStr()	暴力破解，判断子串是否存在|
-3	|String to Integer (atoi)	用’1’-’0’来转换字符到数字|
-4	|Add Binary	用’1’-’0’来转换字符到数字|
-5	|Longest Palindromic Substring	中间向两边延伸，遍历|
-6	|Regular Expression Matching	难以理解|
-7	|Wildcard Matching	难。过|
-8	|Longest Common Prefix	任意一个与其他比较|
-9	|Valid Number	有限状态机|
-10|	Integer to Roman	罗马数字过|
-11|	Roman to Integer	罗马数字过|
-12|	Count and Say	动态规划|
-13|	Anagrams	Sort后做hashkey|
-14|	Simplify Path	Getline切割|
-15|	Length of Last Word	略|
+1	|Valid Palindrome	|前后指针相向遍历比较|
+2	|Implement strStr()|	暴力破解，判断子串是否存在|
+3	|String to Integer (atoi)|	用’1’-’0’来转换字符到数字|
+4	|Add Binary	|用’1’-’0’来转换字符到数字|
+5	|Longest Palindromic Substring	|中间向两边延伸，遍历|
+6	|Regular Expression Matching	|难以理解|
+7	|Wildcard Matching	|难。过|
+8	|Longest Common Prefix	|任意一个与其他比较|
+9	|Valid Number	|有限状态机|
+10|	Integer to Roman	|罗马数字过|
+11|	Roman to Integer	|罗马数字过|
+12|	Count and Say|	动态规划|
+13|	Anagrams	|Sort后做hashkey|
+14|	Simplify Path	|Getline切割|
+15|	Length of Last |Word	略|
 
 
