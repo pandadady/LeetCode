@@ -112,3 +112,8 @@ No.	|Describition|	mark|
 1	|Search for a Range	|二分法找上下沿|
 2	|Search Insert Position	|就是找lower_bound，但是有点小区别。注意右边界是nums.size()，不是nums.size()-1；|
 3|	Search a 2D Matrix|	当成数组|
+##3.广度优先搜索
+##4.深度优先搜索
+##5.贪心法
+##6.分治法
+##7.动态规划
