@@ -97,4 +97,12 @@ No.|	Describition	| mark |
 26	|Sum Root to Leaf Numbers	|
 #常用方法习题总结
 ##1.排序
-
+No.|	Describition	|mark|
+|  :------ |  :-------    |   :---------   |
+1	|Merge Sorted Array	|从后往前比|
+2|	Merge Two Sorted Lists	|链表跟数组最大的不同是插入非常方便|
+3	|Merge k Sorted Lists|	与merge2个相同|
+4|	Insertion Sort List	|
+5	|Sort List|	单向链表适合用归并排序|
+6|	First Missing Positive|
+7	|Sort Colors	0向前，2向后|
