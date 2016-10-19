@@ -106,7 +106,7 @@ No.|	Describition	|mark|
 5	|Sort List|	单向链表适合用归并排序|
 6|	First Missing Positive|
 7	|Sort Colors|	0向前，2向后|
-##查找
+##2.查找
 No.	|Describition|	mark|
 |  :------ |  :-------    |   :---------   |
 1	|Search for a Range	|二分法找上下沿|
