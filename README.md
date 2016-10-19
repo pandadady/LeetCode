@@ -106,3 +106,9 @@ No.|	Describition	|mark|
 5	|Sort List|	单向链表适合用归并排序|
 6|	First Missing Positive|
 7	|Sort Colors|	0向前，2向后|
+##查找
+No.	|Describition|	mark|
+|  :------ |  :-------    |   :---------   |
+1	|Search for a Range	|二分法找上下沿|
+2	|Search Insert Position	|就是找lower_bound，但是有点小区别。注意右边界是nums.size()，不是nums.size()-1；|
+3|	Search a 2D Matrix|	当成数组|
