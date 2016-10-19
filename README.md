@@ -105,4 +105,4 @@ No.|	Describition	|mark|
 4|	Insertion Sort List	|
 5	|Sort List|	单向链表适合用归并排序|
 6|	First Missing Positive|
-7	|Sort Colors	0向前，2向后|
+7	|Sort Colors|	0向前，2向后|
