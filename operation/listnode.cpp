@@ -52,3 +52,30 @@
 		if (!l1 && l2) root->next = l2;
 		return dummpy.next;
 	}
+	/*
+	功能：插入排序
+	*/	
+	ListNode* insertsort(ListNode* head) {
+		ListNode dummpy(0);
+		ListNode *nroot = &dummpy;
+		nroot->next = head;
+		while (head) {
+			if (head->next&&head->next->val < head->val) {
+				while (nroot->next->val<head->next->val) {
+					nroot = nroot->next;
+				}
+				/*
+				dummpy-4-5-3-2-1
+				head=5
+				*/
+				ListNode *tmp = nroot->next;//保存4
+				nroot->next = head->next;//dummpy连接3
+				head->next = head->next->next;//5连接2
+				nroot->next->next = tmp;//3连接4
+				nroot= &dummpy;
+			}
+			else head = head->next;
+		}
+		return dummpy.next;
+
+	}
