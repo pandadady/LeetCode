@@ -105,3 +105,11 @@
 		while (head&&head->val != val)head = head->next;
 		return head;
 	}
+	/*
+	功能：递归查找
+	*/
+	ListNode* recursion_search(ListNode* head, int val) {
+		if (!head) return NULL;
+		if (head->val == val)return head;
+		return recursion_search(head->next, val);
+	}
