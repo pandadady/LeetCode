@@ -79,3 +79,21 @@
 		return dummpy.next;
 
 	}
+	/*
+	功能：归并排序
+	*/
+	ListNode* mergesort(ListNode* head) {
+		if (!head||!head->next)return head;//注意这里
+		ListNode* fast = head;
+		ListNode* slow = head;
+		while (fast->next&&fast->next->next) {
+			fast = fast->next->next;
+			slow = slow->next;
+		}
+		slow = slow->next;
+		slow->next = NULL;//到这里链表对折结束
+		ListNode* mid = slow;
+		ListNode* l1 = mergesort(head);
+		ListNode* l2 = mergesort(mid);
+		return mergelist(l1, l2);
+	}
