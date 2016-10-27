@@ -1,5 +1,7 @@
 	vector<int> v_updown(vector<int> &vec) {
-		for (int i = 0, j = vec.size() - 1; j >= (vec.size() - 1) / 2 && i <= (vec.size() - 1) / 2; i++,j--) {
+		int l = vec.size() - 1;
+		int m =  l / 2;
+		for (int i = 0, j = l; j >= m && i <= m; i++,j--) {
 			int tmp = vec[i];
 			vec[i] = vec[j];
 			vec[j] = tmp;
