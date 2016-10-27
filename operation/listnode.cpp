@@ -97,3 +97,11 @@
 		ListNode* l2 = mergesort(mid);
 		return mergelist(l1, l2);
 	}
+	/*
+	功能：迭代查找
+	*/
+	ListNode* iteration_search(ListNode* head,int val) {
+		ListNode* b = head;
+		while (head&&head->val != val)head = head->next;
+		return head;
+	}
