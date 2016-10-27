@@ -1,3 +1,6 @@
+	/*
+	功能：数组逆序
+	*/
 	vector<int> v_updown(vector<int> &vec) {
 		int l = vec.size() - 1;
 		int m =  l / 2;
