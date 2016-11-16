@@ -21,3 +21,22 @@
 		}
 		return ++index;
 	}
+	/*
+	功能：双下标循环，返回数组中加和最接近给定数字的和
+	*/
+	int diff_direction(vector<int> &vec,int t) {
+		sort(vec.begin(),vec.end());
+		int l = vec.size();
+		int k = l - 1;
+		int sum = 0;
+		int res = 0;
+		for (int i = 0; i < l&&k>=0;) {
+			sum = vec[i] + vec[k];
+			if (sum > t)k--;
+			if (sum < t)i++;
+			if (sum == t)return sum;
+			if (abs(sum - t)<abs(res - t))
+				res = sum;
+		}
+		return res;
+	}
