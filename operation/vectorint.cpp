@@ -75,3 +75,12 @@
 			data[start + i] = tmp[i];
 		}
 	}
+	/*
+	功能：在指定位置插入元素，没有使用原生insert
+	*/
+	void insert_element(vector<int> &vec, int x, int pos) {
+		vector<int>::iterator iter;
+		vec.resize(vec.size() + 1);
+		copy_backward(vec.begin()+pos-1, vec.end() - 1, vec.end());
+		vec[pos - 1] = x;
+	}
