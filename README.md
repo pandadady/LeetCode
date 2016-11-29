@@ -117,10 +117,13 @@ No.	|Describition|	mark|
 ##5.贪心法
 ##6.分治法
 ##7.动态规划
-No.	|Describition|	mark|
+<table>
+<tr>
+<td>No.	</td><td>Describition</td><td>mark</td>
+</tr>
 |  :------ |  :-------    |   :---------   |
 1|Edit Distance|
-<td>
+
 Dp(i)(j)表示word1.substr(i)到word.substr(j)的最少操作步骤，依题意，我们有三种方式
 插入，dp(i)(j) = d(i)d(j-1)+1
 删除，dp(i)(j) = d(i-1)d(j)+1
@@ -130,4 +133,4 @@ Dp(i)(j)表示word1.substr(i)到word.substr(j)的最少操作步骤，依题意�
 2. d[i, 0] = i;
 3. d[i, j] = d[i-1, j - 1] if A[i] == B[j]
 4. d[i, j] = min(d[i-1, j - 1], d[i, j - 1], d[i-1, j]) + 1  if A[i] != B[j]
-</td>
+</table>
