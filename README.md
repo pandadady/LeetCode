@@ -43,7 +43,7 @@ No.|	Describition	| mark |
 | 34|	Linked List Cycle II| |	
 | 35|	Reorder List	| |
 | 36|	LRU Cache	| |
-##2.字符串
+## 2.字符串
 |No.|	Describition|	mark|
 |  :------ |  :-------    |   :---------   |
 |1	|Valid Palindrome	|前后指针相向遍历比较|
