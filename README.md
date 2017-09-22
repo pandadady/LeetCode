@@ -1,12 +1,14 @@
 # LeetCode
 这个库用于总结leetcode中遇到的习题
-#常用数据结构习题总结
-##1.线性表
-###解决进度
+====
+常用数据结构习题总结
+----
+## 1.线性表
+### 解决进度
 No.|	Describition	| mark |
 |  :------ |  :-------    |   :---------   |
 |1 | Remove Duplicates from Sorted Array	|  |
-|2 |	Remove Duplicates from Sorted Array II	 |  |
+|2 | Remove Duplicates from Sorted Array II	 |  |
 |3	|Search in Rotated Sorted Array	|  |
 |4	|Search in Rotated Sorted Array II	|  |
 |5	|Median of Two Sorted Arrays	|递归实现find kth|
