@@ -61,14 +61,14 @@ No.|	Describition	| mark |
 |13|	Anagrams	|Sort后做hashkey|
 |14|	Simplify Path	|Getline切割|
 |15|	Length of Last |Word	略|
-##3.栈和队列
+## 3.栈和队列
 |No.	|Describition|	mark|
 |  :------ |  :-------    |   :---------   |
 |1|	Valid Parentheses	|入栈前括号，逐个比较如果是后括号则出栈
 |2|	Longest Valid Parentheses	|将一对()转成* 
 |3| Largest Rectangle in Histogram	|转成升序[1,2,2,3,5,6]
 |4| Evaluate Reverse Polish Notation	|数字入栈，遇到操作符，出栈后2个，然后结果入栈|
-##4.二叉树
+## 4.二叉树
 |No.|	Describition	|mark|
 |  :------ |  :-------    |   :---------   |
 1	|Binary Tree Preorder Traversal|	用栈保存根节点|
@@ -97,8 +97,8 @@ No.|	Describition	| mark |
 24	|Binary Tree Maximum Path Sum	|
 25	|Populating Next Right Pointers in Each Node	|
 26	|Sum Root to Leaf Numbers	|
-#常用方法习题总结
-##1.排序
+# 常用方法习题总结
+## 1.排序
 No.|	Describition	|mark|
 |  :------ |  :-------    |   :---------   |
 1	|Merge Sorted Array	|从后往前比|
@@ -108,17 +108,17 @@ No.|	Describition	|mark|
 5	|Sort List|	单向链表适合用归并排序|
 6|	First Missing Positive|
 7	|Sort Colors|	0向前，2向后|
-##2.查找
+## 2.查找
 No.	|Describition|	mark|
 |  :------ |  :-------    |   :---------   |
 1	|Search for a Range	|二分法找上下沿|
 2	|Search Insert Position	|就是找lower_bound，但是有点小区别。注意右边界是nums.size()，不是nums.size()-1；|
 3|	Search a 2D Matrix|	当成数组|
-##3.广度优先搜索
-##4.深度优先搜索
-##5.贪心法
-##6.分治法
-##7.动态规划
+## 3.广度优先搜索
+## 4.深度优先搜索
+## 5.贪心法
+## 6.分治法
+## 7.动态规划
 <table>
 <tr>
 <td>No.	</td><td>Describition</td><td>mark</td>
