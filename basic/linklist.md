@@ -1,5 +1,5 @@
 # 链表
-···
+···c++
 class: IntSLLNode{
 public:
     IntSLLNode(){
