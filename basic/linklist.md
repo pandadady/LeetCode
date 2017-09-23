@@ -88,3 +88,4 @@ void IntSLList::addtoTail(int i){
 ```c++
 #include <list>
 ```
+成员函数
