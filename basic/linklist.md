@@ -1,5 +1,5 @@
 # 链表
-···c++
+```c
 class: IntSLLNode{
 public:
     IntSLLNode(){
@@ -13,4 +13,4 @@ private:
     IntSLLNode *next;
     int info;
 };
-···
+```
