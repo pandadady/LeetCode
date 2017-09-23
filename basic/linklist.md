@@ -34,4 +34,49 @@ class IntSLList {
 ```
 >> ## 实现
 ```c++
+void IntSLList::addtoTail(int i){
+    if (tail != 0){
+        tail->next = new IntSLLNode(i);
+        tail = tail->next;
+    }
+    else{
+        head = tail = new IntSLLNode(i);
+     }
+ }
+ void IntSLList::addtoHead(int i){
+     head = new IntSLLNode(i, head);
+     if (tail == 0){
+         tail = head;
+     }
+ }
+ void IntSLList::deleteNode(int i){
+     if (head != 0){
+         if (head->info == i && head == tail){
+             delete head;
+             head = tail = 0;
+         }
+         else if (head->info == i && head != tail){
+             IntSLLNode *tmp = head;
+             head = head->next;
+             delete tmp;
+         }
+         else
+         {
+             IntSLLNode *p = head;
+             IntSLLNode *tmp = head->next;
+             for (;tmp != 0; tmp = tmp->next, p = p->next){
+                 if (tmp->info == i)break;
+             }
+             if (tmp != 0){
+                 p->next = tmp->next;
+                 if (tmp == tail){
+                    tail = p;
+                 }
+                 delete tmp;
+             }
+         }  
+     }
+ }
+ 
+
 ```
