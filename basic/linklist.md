@@ -1,4 +1,5 @@
 # 链表
+···
 class: IntSLLNode{
 public:
     IntSLLNode(){
@@ -12,3 +13,4 @@ private:
     IntSLLNode *next;
     int info;
 };
+···
