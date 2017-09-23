@@ -88,4 +88,7 @@ void IntSLList::addtoTail(int i){
 ```c++
 #include <list>
 ```
-成员函数
+
+|成员函数|行为返回值|
+|  :------ |  :-------    |   
+|void assign(iterator first, iterator last)|删除链表中所有节点，并在迭代器first和last范围内插入元素|
