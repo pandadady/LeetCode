@@ -88,15 +88,15 @@ void IntSLList::addtoTail(int i){
 ```c++
 #include <list>
 ```
-
-|成员函数|行为返回值|
+|  :------ |  :-------    | 
+| 成员函数| 行为返回值|
 |  :------ |  :-------    |   
-|list()|创建空链表|
-|list(size_type n, const T& el=T())|创建一个链表，赋值n个el，类型为T|
-|list(iterator first, iterator last)|创建一个链表，赋值first到last的元素|
-|list(const list<T>& lst)|复制构造函数|
-|size_type max_size()|返回最大节点数|
-|size_type size()|返回节点数|
+| list()|创建空链表|
+| list(size_type n, const T& el=T())|创建一个链表，赋值n个el，类型为T|
+| list(iterator first, iterator last)|创建一个链表，赋值first到last的元素|
+| list(const list<T>& lst)|复制构造函数|
+| size_type max_size()|返回最大节点数|
+| size_type size()|返回节点数|
 |void assign(iterator first, iterator last)|删除链表中所有节点，并在迭代器first和last范围内插入元素|
 |iterator begin()|返回链表中第一个节点的迭代器|
 |iterator end()|返回链表中最后一个节点的迭代器|
