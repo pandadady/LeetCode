@@ -89,8 +89,8 @@ void IntSLList::addtoTail(int i){
 #include <list>
 ```
 
-成员函数| 行为返回值|
-|  :------ |  :-------    |   
+|成员函数| 行为返回值|
+|  :------ |  :-------    | 
 | list()|创建空链表|
 | list(size_type n, const T& el=T())|创建一个链表，赋值n个el，类型为T|
 | list(iterator first, iterator last)|创建一个链表，赋值first到last的元素|
