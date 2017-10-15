@@ -91,4 +91,4 @@ public:
     void balance(T* root,int a, int b);
 };
 ```
-> ### 二叉查找树的查找
+>> ### 二叉查找树的查找
