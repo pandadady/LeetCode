@@ -109,3 +109,24 @@ T* BST<T>::search(BSTNode<T> *p, T& el){
     return 0;
 }
 ```
+>> ### 2.二叉查找树的查找
+```c++
+template<class T>
+void BST<T>::breadtFirst(){
+    Queue<BSTNode<T>*> q;
+    BSTNode<T> *p = root;
+    if (!p){
+        q.enqueue(p);
+        while(q.empty()){
+            BSTNode<T> *p = q.dequeue();
+            visit(p);
+            if (p->left != 0){
+                q.enqueue(p->left);
+            }
+            if (p->right != 0){
+                q.enqueue(p->right);
+            }
+        }
+    }
+}
+```
