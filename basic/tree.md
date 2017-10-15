@@ -91,4 +91,21 @@ public:
     void balance(T* root,int a, int b);
 };
 ```
->> ### 二叉查找树的查找
+>> ### 1.二叉查找树的查找
+```c++
+template<class T>
+T* BST<T>::search(BSTNode<T> *p, T& el){
+    while(!p){
+        if (p->el == el){
+            return &p->el;
+        }
+        else if(p->el < el){
+            p = p->right ;
+        }
+        else if(p->el < el){
+            p = p->left;
+        }
+    }
+    return 0;
+}
+```
