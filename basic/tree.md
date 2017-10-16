@@ -109,10 +109,10 @@ T* BST<T>::search(BSTNode<T> *p, T& el){
     return 0;
 }
 ```
->> ### 2.二叉查找树的查找
+>> ### 2.广度优先遍历
 ```c++
 template<class T>
-void BST<T>::breadtFirst(){
+void BST<T>::breadthFirst(){
     Queue<BSTNode<T>*> q;
     BSTNode<T> *p = root;
     if (!p){
