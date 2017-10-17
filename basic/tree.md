@@ -110,6 +110,7 @@ T* BST<T>::search(BSTNode<T> *p, T& el){
     return 0;
 }
 ```
+![][1]
 >> ### 2.广度优先遍历（层次遍历）
 ```c++
 template<class T>
@@ -132,3 +133,18 @@ void BST<T>::breadthFirst(){
 }
 ```
 >> ### 3.深度优先遍历（前序、中序、后序）
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1]: ../images/binary tree.png
