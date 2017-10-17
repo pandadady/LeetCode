@@ -92,6 +92,7 @@ public:
 };
 ```
 >> ### 1.二叉查找树的查找
+根据二叉查找树性质，目标比根值大则往右边查，目标比根植小则往左边查
 ```c++
 template<class T>
 T* BST<T>::search(BSTNode<T> *p, T& el){
@@ -109,7 +110,7 @@ T* BST<T>::search(BSTNode<T> *p, T& el){
     return 0;
 }
 ```
->> ### 2.广度优先遍历
+>> ### 2.广度优先遍历（层次遍历）
 ```c++
 template<class T>
 void BST<T>::breadthFirst(){
@@ -130,3 +131,4 @@ void BST<T>::breadthFirst(){
     }
 }
 ```
+>> ### 3.深度优先遍历（前序、中序、后序）
