@@ -110,8 +110,10 @@ T* BST<T>::search(BSTNode<T> *p, T& el){
     return 0;
 }
 ```
-![][1]
+
 >> ### 2.广度优先遍历（层次遍历）
+![][1]
+遍历的过程是把树形结构线性化的过程，广度优先遍历按照从上到下的顺序一层一层进行输出
 ```c++
 template<class T>
 void BST<T>::breadthFirst(){
