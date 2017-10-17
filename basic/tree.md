@@ -147,4 +147,4 @@ void BST<T>::breadthFirst(){
 
 
 
-[1]: ../image/binary tree.jpg
+[1]: ../image/binary_tree.png
