@@ -140,7 +140,27 @@ void BST<T>::breadthFirst(){
 >> ### 3.深度优先遍历（前序、中序、后序）
 通过递归写法，可以理解非递归写法的思路，也是一个难点
 >>> #### 3.1前序遍历
-前序遍历：根左右。先把根节点入栈，然后循环开始，在循环里，弹出节点，然后输出，然后先把右节点入栈，再把左节点入栈。然后循环直到无节点入栈
+前序遍历：根左右。先把根节点入栈，然后循环开始，在循环里，弹出节点，然后输出，然后先把右节点入栈，再把左节点入栈。然后循环直到栈空
+```c++
+template<class T>
+void BST<T>::iterativePerorder(){
+    Stack<BSTNode<T>*> travStack.push(p);
+    BSTNode<T> *p = root;
+    if (p != 0){
+        travStack.push(p);
+        while(!travStack.empty()){
+            p = travStack.pop();
+            visit(p);
+            if (p->right !=0){
+                travStack.push(p->right);
+            }
+            if (p->left !=0){
+                travStack.push(p->left);
+            }
+        }
+    }
+}
+```
 
 
 
