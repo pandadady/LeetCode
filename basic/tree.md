@@ -211,6 +211,31 @@ void BST<T>::iterativeInorder(){
 }
 ```
 >> ### 2. 二叉查找树的插入
+思路：需要找到一个没有子树的节点，类似查找算法
+```c++
+template<class T>
+void BST<T>::insert(T& el){
+    BSTNode<T> *p = root;
+    BSTNode<T> *prev = 0;
+    while(p != 0){
+        prev = p;
+        if (el < p->el){
+            p = p->right;
+        }
+        else{
+            p = p->left;
+        }
+    }
+    if (root == 0){
+        root = new BSTNode<T>(el);
+    }
+    else if (el < prev->el){
+        prev->left = new BSTNode<T>(el);
+    }
+    else prev->right = new BSTNode<T>(el);
+
+}
+```
 
 
 
