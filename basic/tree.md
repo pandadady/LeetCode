@@ -112,9 +112,9 @@ T* BST<T>::search(BSTNode<T> *p, T& el){
 ```
 
 >> ### 2.广度优先遍历（层次遍历）
-遍历的过程是把树形结构线性化的过程。
-广度优先遍历按照从上到下的顺序一层一层进行输出
-利用队列存放节根节点，从根节点开始循环，先从队列中取出节点并输出节点的值，然后把左右子节点加入到队列
+遍历的过程是把树形结构线性化的过程。<br>
+广度优先遍历按照从上到下的顺序一层一层进行输出<br>
+利用队列存放节根节点，从根节点开始循环，先从队列中取出节点并输出节点的值，然后把左右子节点加入到队列<br>
 ![][1]<br>
 输出的顺序为：ABCDEFGHI
 ```c++
@@ -140,13 +140,13 @@ void BST<T>::breadthFirst(){
 >> ### 3.深度优先遍历（前序、中序、后序）
 通过递归写法，可以理解非递归写法的思路。遍历一颗树一般是从root节点开始，前后中序遍历方法访问节点的顺序实际上是一样的，区别在于输出。
 >>> #### 3.1前序遍历
-前序遍历：根左右。
-思路：从root节点开始，第一次访问到根节点的时候，立刻输出，然后需要先输出左子树，再输出右子树。
-过程：先把根节点入栈，然后循环开始，在循环里，弹出节点，然后输出，然后先把右节点入栈，再把左节点入栈。然后循环直到栈空。
+前序遍历：根左右。<br>
+思路：从root节点开始，第一次访问到根节点的时候，立刻输出，然后需要先输出左子树，再输出右子树。<br>
+过程：先把根节点入栈，然后循环开始，在循环里，弹出节点，然后输出，然后先把右节点入栈，再把左节点入栈。然后循环直到栈空。<br>
 ```c++
 template<class T>
 void BST<T>::iterativePerorder(){
-    Stack<BSTNode<T>*> travStack.push(p);
+    Stack<BSTNode<T>*> travStack;
     BSTNode<T> *p = root;
     if (p != 0){
         travStack.push(p);
@@ -165,7 +165,51 @@ void BST<T>::iterativePerorder(){
 ```
 >>> #### 3.2后序遍历
 后序遍历：左右根。
-
+思路：从root节点开始，遍历所有左节点，把这些节点都入栈，，直到一个没有左节点的节点，<br>
+循环判断这个节点的右节点为空，访问这个节点，然后从栈中弹出一个节点，如果这个节点还是没有右边节点，则再访问这个节点，再出栈新节点<br>
+如果这个节点有右节点，那么把当前节点入栈，把当前节点转为右节点，结束一次循环，然后从新开始root节点的类似的过程，直到节点为空
+```c++
+template<class T>
+void BST<T>::iterativePostorder(){
+    Stack<BSTNode<T>*> travStack.push(p);;
+    BSTNode<T> *p = root;
+    if (p != 0){
+        while(p != 0){
+            for(;p->left!=0;p = p->left){
+                travStack.push(p);
+            }
+            while(p->right == 0){
+                visit(p);
+                if (!travStack.empty()){
+                    p = travStack.pop();
+                }
+            }
+            travStack.push(p);
+            p = p->right;
+        }
+    }
+}
+```
+>>> #### 3.3中序遍历
+后序遍历：左根右。<br>
+思路：从root节点开始，循环遍历，把左节点入栈，直到遇到一个没有左节点的节点，访问这个节点，<br>
+然后判断这个节点有右节点，当前节点换为右节点，重复root开始的类似的循环过程
+```c++
+template<class T>
+void BST<T>::iterativeInorder(){
+    Stack<BSTNode<T>*> travStack.push(p);;
+    BSTNode<T> *p = root;
+    if (p != 0){
+        while(p != 0){
+            for(;p->left!=0;p = p->left){
+                travStack.push(p);
+            }
+            visit(p);
+            p = p->right;
+        }
+    }
+}
+```
 
 
 
