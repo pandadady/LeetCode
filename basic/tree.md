@@ -210,6 +210,7 @@ void BST<T>::iterativeInorder(){
     }
 }
 ```
+>> ### 2. 二叉查找树的插入
 
 
 
