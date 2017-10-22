@@ -247,6 +247,4 @@ void BST<T>::insert(T& el){
 
 
 
-
-
 [1]: ../images/binary_tree.png
