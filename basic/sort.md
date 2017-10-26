@@ -41,4 +41,38 @@ void quicksort(T d[], int first, int last){
 时间复杂度：nlogn<br>
 方法：把2个比较短的数组合并是容易实现的，此方法把数组不断分裂，再合并子数组<br>
 ```c++
+template<class T>
+void mergearray(T a[], int first, int mid, int last, T temp[])  
+{  
+    int i = first, j = mid + 1;  
+    int m = mid,   n = last;  
+    int k = 0;  
+      
+    while (i <= m && j <= n)  
+    {  
+        if (a[i] <= a[j])  
+            temp[k++] = a[i++];  
+        else  
+            temp[k++] = a[j++];  
+    }  
+      
+    while (i <= m)  
+        temp[k++] = a[i++];  
+      
+    while (j <= n)  
+        temp[k++] = a[j++];  
+      
+    for (i = 0; i < k; i++)  
+        a[first + i] = temp[i];  
+}  
+void mergesort(int a[], int first, int last, int temp[])  
+{  
+    if (first < last)  
+    {  
+        int mid = (first + last) / 2;  
+        mergesort(a, first, mid, temp);    //左边有序  
+        mergesort(a, mid + 1, last, temp); //右边有序  
+        mergearray(a, first, mid, last, temp); //再将二个有序数列合并  
+    }  
+}  
 ```
