@@ -12,8 +12,8 @@ template<class T>
 void quicksort(T d[], int first, int last){
     int lower = first + 1;
     int upper = last;
-    int bound = (lower+upper)/2
-    swap(d[first], d[bound]);
+    swap(d[first],  d[(lower+upper)/2]);
+    int bound = d[first],;
     while(lower<=upper){
         while(d[lower<d[bound]){
             lower--;
