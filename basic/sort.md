@@ -40,4 +40,5 @@ void quicksort(T d[], int first, int last){
 >> ### 归并排序
 时间复杂度：nlogn<br>
 方法：把2个比较短的数组合并是容易实现的，此方法把数组不断分裂，再合并子数组<br>
-实现细节：<br>
+```c++
+```
