@@ -16,13 +16,13 @@ void quicksort(T d[], int first, int last){
     int bound = d[first],;
     while(lower<=upper){
         while(d[lower<d[bound]){
-            lower--;
+            lower++;
         }
         while(d[upper]>d[bound]){
-            upper++;
+            upper--;
         }
         if (lower<=upper){
-            swap(d[lower],d[upper]);
+            swap(d[lower--],d[upper++]);
         }
         else{
             lower++;
